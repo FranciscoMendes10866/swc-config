@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "type": "module",
   "scripts": {
-    "dev": "concurrently \"pnpm watch-compile\" \"pnpm watch-dev\"",
+    "dev": "concurrently \"yarn watch-compile\" \"yarn watch-dev\"",
     "watch-compile": "swc src -w --out-dir dist",
-    "watch-dev": "nodemon --watch \"dist/**/*\" -e js --exec \"node --experimental-specifier-resolution=node\" ./dist/main.js",
+    "watch-dev": "nodemon --watch \"dist/**/*\" -e js ./dist/main.js",
     "build": "swc src -d dist",
-    "start": "NODE_ENV=production node --experimental-specifier-resolution=node dist/main.js",
+    "start": "NODE_ENV=production node dist/main.js",
     "clean": "rm -rf dist"
   },
   "keywords": [],
