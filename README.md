@@ -1,2 +1,2 @@
 # swc-config
-Node · TypeScript · SWC · tinnyHttp
+Node · TypeScript · SWC

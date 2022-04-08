@@ -1,12 +1,18 @@
 {
-    "jsc": {
-        "parser": {
-            "syntax": "typescript"
-        }
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true,
+      "dynamicImport": true
     },
-    "env": {
-        "targets": {
-            "node": 16
-        }
-    }
+    "target": "es2020",
+    "paths": {
+      "@functions/*": ["./src/functions/*"]
+    },
+    "baseUrl": "."
+  },
+  "module": {
+    "type": "es6"
+  }
 }
